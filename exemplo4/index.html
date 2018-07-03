@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WebGL - ThreeJS 4</title>
+    <style>
+        body { margin: 0; font-family: Helvetica; }
+        canvas { width: 100%; height: 100% }
+        span { color: #e40e6e; font-weight: bold; }
+
+        .controlers{
+            z-index: 2;
+            position: absolute;
+            color: #fff;
+            bottom: 20px;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>    
+    <div class="controlers">
+        <ul type="none">
+            <li><span>Arrows</span> - Control the cube rotation</li>	
+            <li><span>W</span> - wireframe on/off</li>
+        </ul>
+    </div>
+    <!--js-->
+    <script src="../utils/three.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
