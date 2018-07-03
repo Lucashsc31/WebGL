@@ -11,8 +11,11 @@ window.onload = () => {
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(renderer.domElement);
 
-    var geometry = new THREE.BoxGeometry (1, 1, 1);
-    var material = new THREE.MeshBasicMaterial({color: 0xe40e6e});
+    var geometry = new THREE.BoxGeometry(1, 1, 1);
+    var material = new THREE.MeshBasicMaterial({
+        color: 0xe40e6e,
+        wireframe: true
+    });
     var cube = new THREE.Mesh(geometry, material);
     scene.add(cube);
 
