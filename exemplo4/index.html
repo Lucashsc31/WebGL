@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>WebGL - ThreeJS 4</title>
     <style>
-        body { margin: 0; font-family: Helvetica; background-color: #000;}
-        canvas { width: 100%; height: 100% }
+        body,html{ width: 100%; height: 100%; padding: 0; margin: 0; overflow: hidden; font-family: Helvetica; }
         span { color: #e40e6e; font-weight: bold; }
 
         .controlers{
@@ -20,10 +19,12 @@
     </style>
 </head>
 <body>    
+    <canvas id="scene"></canvas>
     <div class="controlers">
         <ul type="none">
             <li><span>Arrows</span> - Control the cube rotation</li>	
             <li><span>W</span> - wireframe on/off</li>
+            <li><span>L</span> - light on/off</li>
         </ul>
     </div>
     <!--js-->
